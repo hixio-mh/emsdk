@@ -53,7 +53,7 @@ RUN echo "## Aggressive optimization: Remove debug symbols" \
 # -------------------------------- STAGE DEPLOY --------------------------------
 # ------------------------------------------------------------------------------
 
-FROM debian:buster-slim AS stage_deploy
+FROM debian:10.10-slim AS stage_deploy
 
 COPY --from=stage_build /emsdk /emsdk
 
